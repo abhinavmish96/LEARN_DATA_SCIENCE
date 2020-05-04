@@ -4,3 +4,5 @@ CREATE TABLE friends (
     birthday DATE
 
 );
+
+SELECT * FROM friends;
