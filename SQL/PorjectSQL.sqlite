@@ -33,4 +33,7 @@ UPDATE friends
 SET email = 'BFFTwo@codecademy.com'
 WHERE id = 3;
 
+DELETE FROM friends
+WHERE id = 1;
+
 SELECT * FROM friends;
