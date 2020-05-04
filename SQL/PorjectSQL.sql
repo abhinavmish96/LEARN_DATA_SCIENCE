@@ -5,4 +5,7 @@ CREATE TABLE friends (
 
 );
 
+INSERT INTO friends (id, name, birthday)
+VALUES (1, 'Jane Doe', '1990-05-30');
+
 SELECT * FROM friends;
