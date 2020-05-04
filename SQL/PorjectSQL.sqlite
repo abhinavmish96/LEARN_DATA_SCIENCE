@@ -18,4 +18,19 @@ UPDATE friends
 SET name = 'Jane Smith'
 WHERE id = 1;
 
+ALTER TABLE friends
+ADD COLUMN email TEXT;
+
+UPDATE friends
+SET email = 'jane@codecademy.com'
+WHERE id = 1;
+
+UPDATE friends
+SET email = 'BFFOne@codecademy.com'
+WHERE id = 2;
+
+UPDATE friends
+SET email = 'BFFTwo@codecademy.com'
+WHERE id = 3;
+
 SELECT * FROM friends;
