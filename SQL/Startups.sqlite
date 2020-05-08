@@ -1,0 +1,16 @@
+SELECT * FROM startups;
+
+SELECT COUNT(*) FROM startups;
+
+SELECT SUM(valuation) FROM startups;
+
+SELECT MAX(raised) FROM startups
+WHERE stage = "Seed";
+
+SELECT MIN(founded) FROM startups;
+
+SELECT category,AVG(valuation) FROM startups
+GROUP BY category;
+
+SELECT category,ROUND(AVG(valuation), 2) FROM startups
+GROUP BY category;
