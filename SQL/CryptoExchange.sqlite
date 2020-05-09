@@ -1,0 +1,12 @@
+SELECT * FROM transactions;
+
+SELECT SUM(money_in) FROM transactions;
+
+SELECT SUM(money_out) FROM transactions;
+
+SELECT COUNT(money_in) FROM transactions;
+ 
+SELECT currency, COUNT(money_in) FROM transactions
+WHERE currency LIKE '%BIT';
+
+SELECT MAX(money_in) FROM transactions;
