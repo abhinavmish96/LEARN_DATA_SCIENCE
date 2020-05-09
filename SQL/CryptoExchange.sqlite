@@ -10,3 +10,14 @@ SELECT currency, COUNT(money_in) FROM transactions
 WHERE currency LIKE '%BIT';
 
 SELECT MAX(money_in) FROM transactions;
+
+SELECT MAX(money_out) FROM transactions;
+
+SELECT currency, AVG(money_in) FROM transactions
+WHERE currency LIKE '%ETH%';
+
+SELECT date, AVG(money_in), AVG(money_out) FROM transactions 
+GROUP BY 1;
+
+SELECT date, ROUND(AVG(money_in),2) AS avg_money_in, ROUND(AVG(money_out),2) AS avg_money_out FROM transactions 
+GROUP BY 1;
