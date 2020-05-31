@@ -1,5 +1,15 @@
 import pandas as pd
 
+
+df1 = pd.DataFrame({
+  'Product ID': [1, 2, 3, 4],
+  'Product Name': ['t-shirt','t-shirt','skirt','skirt'],
+  'Color': ['blue','green','red','black']
+  # add Product Name and Color here
+})
+
+print(df1)
+
 df2 = pd.DataFrame([
   [1, 'San Diego', 100],
   [2, 'Los Angeles', 120],
@@ -9,3 +19,4 @@ df2 = pd.DataFrame([
   columns=['Store ID', 'Location','Number of Employees'])
 
 print(df2)
+
