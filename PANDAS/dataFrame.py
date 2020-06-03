@@ -22,3 +22,7 @@ print(df2)
 df = pd.read_csv('sample.csv')
 
 print(df)
+
+df = pd.read_csv('imdb.csv')
+print(df.head())
+print(df.info())
