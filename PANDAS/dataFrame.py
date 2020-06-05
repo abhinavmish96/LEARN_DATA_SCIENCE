@@ -48,3 +48,5 @@ print(type(df))
 clinic_north_south = df[['clinic_north', 'clinic_south']]
 
 print(type(clinic_north_south))
+
+march = df.iloc[2]
