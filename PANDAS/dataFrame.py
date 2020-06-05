@@ -62,3 +62,15 @@ print(january)
 march_april = df[(df.month == 'March') | (df.month == 'April')]
 
 print(march_april)
+
+df2 = df.loc[[1, 3, 5]]
+
+# print(df2)
+
+df3 = df2.reset_index()
+
+print(df3)
+
+df2.reset_index(inplace = True, drop = True)
+
+print(df2)
