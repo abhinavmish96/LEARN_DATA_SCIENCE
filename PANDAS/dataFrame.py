@@ -54,3 +54,11 @@ march = df.iloc[2]
 april_may_june = df.iloc[3:]
 
 print(april_may_june)
+
+january = df[df.month == 'January']
+
+print(january)
+
+march_april = df[(df.month == 'March') | (df.month == 'April')]
+
+print(march_april)
