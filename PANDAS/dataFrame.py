@@ -50,3 +50,7 @@ clinic_north_south = df[['clinic_north', 'clinic_south']]
 print(type(clinic_north_south))
 
 march = df.iloc[2]
+
+april_may_june = df.iloc[3:]
+
+print(april_may_june)
