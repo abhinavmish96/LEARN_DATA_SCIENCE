@@ -44,3 +44,7 @@ clinic_north = df.clinic_north
 print(type(clinic_north))
 
 print(type(df))
+
+clinic_north_south = df[['clinic_north', 'clinic_south']]
+
+print(type(clinic_north_south))
