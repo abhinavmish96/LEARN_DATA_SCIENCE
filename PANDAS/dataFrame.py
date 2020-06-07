@@ -86,5 +86,6 @@ df = pd.DataFrame([
 
 # Add columns here
 df['Sold in Bulk?'] = ['Yes','Yes','No','No']
+df['Is taxed?'] = 'Yes'
 
 print(df)
