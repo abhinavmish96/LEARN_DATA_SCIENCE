@@ -65,7 +65,6 @@ print(march_april)
 
 df2 = df.loc[[1, 3, 5]]
 
-# print(df2)
 
 df3 = df2.reset_index()
 
@@ -84,7 +83,6 @@ df = pd.DataFrame([
   columns=['Product ID', 'Description', 'Cost to Manufacture', 'Price']
 )
 
-# Add columns here
 df['Sold in Bulk?'] = ['Yes','Yes','No','No']
 df['Is taxed?'] = 'Yes'
 df['Margin'] = df['Price'] - df['Cost to Manufacture']
@@ -98,6 +96,5 @@ df = pd.DataFrame([
 ],
 columns=['Name', 'Email'])
 
-# Add columns here
 df['Lowercase Name'] = df.Name.apply(lower)
 print(df)
