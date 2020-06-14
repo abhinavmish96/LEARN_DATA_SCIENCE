@@ -6,7 +6,7 @@ print(orders.head(10))
 most_expensive = orders.price.max()
 num_colors = orders.shoe_color.nunique()
 
-pricey_shoes = orders.groupby('shoe_type').price.max();
+pricey_shoes = orders.groupby('shoe_type').price.max().reset_index();
 
 print(pricey_shoes)
 
