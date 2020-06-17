@@ -11,3 +11,7 @@ pricey_shoes = orders.groupby('shoe_type').price.max().reset_index();
 print(pricey_shoes)
 
 print(type(pricey_shoes))
+
+cheap_shoes = orders.groupby('shoe_color').price.apply(lambda x: np.percentile(x,25)).reset_index()
+
+print(cheap_shoes)
