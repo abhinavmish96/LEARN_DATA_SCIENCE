@@ -98,3 +98,7 @@ columns=['Name', 'Email'])
 
 df['Lowercase Name'] = df.Name.apply(lower)
 print(df)
+
+shoe_counts = orders.groupby(['shoe_type','shoe_color'])['id'].count().reset_index()
+
+print(shoe_counts)
