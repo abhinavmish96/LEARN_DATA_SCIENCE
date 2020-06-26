@@ -11,3 +11,6 @@ print(orders)
 print(products)
 
 print(customers)
+
+order_3_description = 'thing-a-ma-jig'
+order_5_phone_number = '112-358-1321'
