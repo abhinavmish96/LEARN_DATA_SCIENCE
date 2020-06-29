@@ -39,3 +39,9 @@ all_data = sales.merge(targets)\
 print(all_data)
 
 results = all_data[(all_data.revenue > all_data.target) & (all_data.women > all_data.men)]
+
+rders_products = pd.merge(
+	orders,
+	products.rename(columns={'id':'product_id'})
+)
+print(orders_products)
