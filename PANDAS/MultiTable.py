@@ -45,3 +45,13 @@ rders_products = pd.merge(
 	products.rename(columns={'id':'product_id'})
 )
 print(orders_products)
+
+orders_products = pd.merge(
+	orders,
+	products,
+	left_on = 'product_id',
+	right_on = 'id',
+	suffixes = ['_orders', '_products']
+)
+
+print(orders_products)
