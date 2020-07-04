@@ -55,3 +55,10 @@ orders_products = pd.merge(
 )
 
 print(orders_products)
+
+print(orders)
+print(products)
+
+merged_df = pd.merge(orders, products)
+
+print(merged_df)
