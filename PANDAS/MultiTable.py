@@ -71,3 +71,9 @@ print(store_b)
 store_a_b_outer = pd.merge(store_a, store_b, how='outer')
 
 print(store_a_b_outer)
+
+store_a_b_left = pd.merge(store_a, store_b, how='left')
+store_b_a_left = pd.merge(store_b, store_a, how='left')
+
+print(store_a_b_left)
+print(store_b_a_left)
