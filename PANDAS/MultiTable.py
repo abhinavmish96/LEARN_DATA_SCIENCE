@@ -77,3 +77,13 @@ store_b_a_left = pd.merge(store_b, store_a, how='left')
 
 print(store_a_b_left)
 print(store_b_a_left)
+
+bakery = pd.read_csv('bakery.csv')
+print(bakery)
+ice_cream = pd.read_csv('ice_cream.csv')
+print(ice_cream)
+
+# Concatenate the two menus to form a new menu
+menu = pd.concat([bakery, ice_cream])
+
+print(menu)
